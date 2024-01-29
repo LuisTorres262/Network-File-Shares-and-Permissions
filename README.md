@@ -5,7 +5,7 @@
 </p>
 
 <h1>Network File Shares and Permissions walkthrough</h1>
-In this tutorial we will be sharing out resources over the network and creating file shares to allow read, write, or deny access to individual users or groups.<br />
+In this tutorial, we will be sharing out resources over the network and creating file shares to allow read, write, or deny access to individual users or groups.<br />
 
 
 <h2>Environments and Technologies Used</h2>
@@ -19,7 +19,10 @@ In this tutorial we will be sharing out resources over the network and creating 
 - Windows 10</b> (21H2)
 - Windows Server 2022</b> (21H2)
 
-<h2>Lifecycle Stages</h2>
+
+<h2>Prerequesites</h2>
+
+You will need to create 2 virtual machines. One will be the domain controller which will be using Windows Server 2022 and the other will be the user end that will be running Windows 10. You will have to have Active Directory setup on the domain controller's virtual machine. We will be switching between both virtual machines. 
 
 <p>
 <img src="https://i.imgur.com/KlOFvtb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>

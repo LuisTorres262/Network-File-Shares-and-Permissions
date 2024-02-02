@@ -24,6 +24,8 @@ In this tutorial, we will be sharing out resources over the network and creating
 
 You will need to create 2 virtual machines in Azure. One will be the domain controller (DC-1) which will be using Windows Server 2022 and will have Active Directory running. The other will be the user end (Client-1) that will be running Windows 10 and will need to be joined to the domain of DC-1. We will be switching between both virtual machines. 
 
+<h2>Tutorial Steps</h2>
+
 <p>
 <img src="https://i.imgur.com/KlOFvtb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>

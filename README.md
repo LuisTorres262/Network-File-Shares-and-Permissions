@@ -22,7 +22,7 @@ In this tutorial, we will be sharing out resources over the network and creating
 
 <h2>Prerequesites</h2>
 
-You will need to create 2 virtual machines. One will be the domain controller which will be using Windows Server 2022 and the other will be the user end that will be running Windows 10. You will have to have Active Directory setup on the domain controller's virtual machine. We will be switching between both virtual machines. 
+You will need to create 2 virtual machines in Azure. One will be the domain controller (DC-1) which will be using Windows Server 2022 and will have Active Directory running. The other will be the user end (Client-1) that will be running Windows 10 and will need to be joined to the domain of DC-1. We will be switching between both virtual machines. 
 
 <p>
 <img src="https://i.imgur.com/KlOFvtb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>

@@ -55,34 +55,34 @@ Create 4 folders with the names, "read-access", "write-access", "no-access", and
 <img src="https://i.imgur.com/HgTp2PH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Share the "read-access" folder to the "Domain Users"
+Share the "read-access" folder with the "Domain Users" group. 
 </p>
 <br />
 
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/VEeVnly.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Set the permission of the "read-access" folder to read-only. 
 </p>
 <br />
 
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/uOkJdpy.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Share the "write-access" folder with the "Domain users" group. Then set the permissions to "Read/Write".
+</p>
+<br />
+
+
+<p>
+<img src="https://i.imgur.com/VlzOtuQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Share the "no-access" folder with the "Domain Admins" group. Then set the permissions to "Read/Write". 
 </p>
 <br />
 

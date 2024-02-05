@@ -82,7 +82,51 @@ Share the "write-access" folder with the "Domain users" group. Then set the perm
 <img src="https://i.imgur.com/VlzOtuQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Share the "no-access" folder with the "Domain Admins" group. Then set the permissions to "Read/Write". 
+Share the "no-access" folder with the "Domain Admins" group. Then set the permissions to "Read/Write". Skip the "accounting" folder for now.
+</p>
+<br />
+
+
+<p>
+<img src="https://i.imgur.com/Ksv2EXK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Go into the Client-1 Virtual Machine and navigate over to the shared folders in the C:\ drive.
+<br />
+
+
+<p>
+<img src="https://i.imgur.com/eFMB9JR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Try to access the folders you just created. Which folders can you access? Which ones can you create stuff in?
+</p>
+<br />
+
+
+<p>
+<img src="https://i.imgur.com/gJMdzb5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Try to add a text document to the "read-access" folder, what do you think will happen?
+</p>
+<br />
+
+
+<p>
+<img src="https://i.imgur.com/HEDpOCQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+If you guessed you'd be denied access then you would be right! You only have read access so you can't add text documents. Try playing around with the other folders and see what you can and can't do. This is a way to see how the permissions we set on DC-1 affect how Client-1 can interact with the shared folders.
+</p>
+<br />
+
+
+<p>
+<img src="https://i.imgur.com/HEDpOCQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Go back to the DC-1 VM, in Active Directory, and create a security group. 
 </p>
 <br />
 

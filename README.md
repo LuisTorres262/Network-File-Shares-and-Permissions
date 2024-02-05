@@ -91,7 +91,7 @@ You will need to create 2 virtual machines in Azure. One will be the domain cont
 <img src="https://i.imgur.com/Ksv2EXK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-8. Go into the Client-1 Virtual Machine and navigate over to the shared folders in the C:\ drive.
+8. Go into the Client-1 Virtual Machine and navigate over to the shared folders.
 <br />
 
 

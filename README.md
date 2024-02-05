@@ -30,7 +30,7 @@ You will need to create 2 virtual machines in Azure. One will be the domain cont
 <img src="https://i.imgur.com/KlOFvtb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-On the DC-1 VM, open up File Explorer.
+1. On the DC-1 VM, open up File Explorer.
 </p>
 <br />
 
@@ -38,7 +38,7 @@ On the DC-1 VM, open up File Explorer.
 <img src="https://i.imgur.com/TfvrCK0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Go to the C:\ drive.
+2. Go to the C:\ drive.
 </p>
 <br />
 
@@ -46,7 +46,7 @@ Go to the C:\ drive.
 <img src="https://i.imgur.com/ZCrSD5e.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Create 4 folders with the names, "read-access", "write-access", "no-access", and "accounting"
+3. Create 4 folders with the names, "read-access", "write-access", "no-access", and "accounting"
 </p>
 <br />
 
@@ -55,7 +55,7 @@ Create 4 folders with the names, "read-access", "write-access", "no-access", and
 <img src="https://i.imgur.com/HgTp2PH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Share the "read-access" folder with the "Domain Users" group. 
+4. Share the "read-access" folder with the "Domain Users" group. 
 </p>
 <br />
 
@@ -64,7 +64,7 @@ Share the "read-access" folder with the "Domain Users" group.
 <img src="https://i.imgur.com/VEeVnly.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Set the permission of the "read-access" folder to read-only. 
+5. Set the permission of the "read-access" folder to read-only. 
 </p>
 <br />
 
@@ -73,7 +73,7 @@ Set the permission of the "read-access" folder to read-only.
 <img src="https://i.imgur.com/uOkJdpy.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Share the "write-access" folder with the "Domain users" group. Then set the permissions to "Read/Write".
+6. Share the "write-access" folder with the "Domain users" group. Then set the permissions to "Read/Write".
 </p>
 <br />
 
@@ -82,7 +82,7 @@ Share the "write-access" folder with the "Domain users" group. Then set the perm
 <img src="https://i.imgur.com/VlzOtuQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Share the "no-access" folder with the "Domain Admins" group. Then set the permissions to "Read/Write". Skip the "accounting" folder for now.
+7. Share the "no-access" folder with the "Domain Admins" group. Then set the permissions to "Read/Write". Skip the "accounting" folder for now.
 </p>
 <br />
 
@@ -91,7 +91,7 @@ Share the "no-access" folder with the "Domain Admins" group. Then set the permis
 <img src="https://i.imgur.com/Ksv2EXK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Go into the Client-1 Virtual Machine and navigate over to the shared folders in the C:\ drive.
+8. Go into the Client-1 Virtual Machine and navigate over to the shared folders in the C:\ drive.
 <br />
 
 
@@ -99,7 +99,7 @@ Go into the Client-1 Virtual Machine and navigate over to the shared folders in 
 <img src="https://i.imgur.com/eFMB9JR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Try to access the folders you just created. Which folders can you access? Which ones can you create stuff in?
+9. Try to access the folders you just created. Which folders can you access? Which ones can you create stuff in?
 </p>
 <br />
 
@@ -108,7 +108,7 @@ Try to access the folders you just created. Which folders can you access? Which 
 <img src="https://i.imgur.com/gJMdzb5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Try to add a text document to the "read-access" folder, what do you think will happen?
+10. Try to add a text document to the "read-access" folder, what do you think will happen?
 </p>
 <br />
 
@@ -117,7 +117,7 @@ Try to add a text document to the "read-access" folder, what do you think will h
 <img src="https://i.imgur.com/HEDpOCQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-If you guessed you'd be denied access then you would be right! You only have read access so you can't add text documents. Try playing around with the other folders and see what you can and can't do. This is a way to see how the permissions we set on DC-1 affect how Client-1 can interact with the shared folders.
+11. If you guessed you'd be denied access then you would be right! You only have read access so you can't add text documents. Try playing around with the other folders and see what you can and can't do.
 </p>
 <br />
 
@@ -126,7 +126,7 @@ If you guessed you'd be denied access then you would be right! You only have rea
 <img src="https://i.imgur.com/BvydJ6W.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Return to the DC-1 VM in Active Directory and create a security group. 
+12. Return to the DC-1 VM in Active Directory and create a security group. 
 </p>
 <br />
 
@@ -135,7 +135,7 @@ Return to the DC-1 VM in Active Directory and create a security group.
 <img src="https://i.imgur.com/oZGHKd4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Name the security group "ACCOUNTANTS".
+13. Name the security group "ACCOUNTANTS".
 </p>
 <br />
 
@@ -144,7 +144,7 @@ Name the security group "ACCOUNTANTS".
 <img src="https://i.imgur.com/AYTDGaQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Go to the "accounting" folder you created earlier. Share the folder with the "ACCOUNTANTS" group and set the permissions to "Read/Write".
+14. Go to the "accounting" folder you created earlier. Share the folder with the "ACCOUNTANTS" group and set the permissions to "Read/Write".
 </p>
 <br />
 
@@ -153,7 +153,7 @@ Go to the "accounting" folder you created earlier. Share the folder with the "AC
 <img src="https://i.imgur.com/L04j2lu.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Go back to the Client-1 VM and try to access the "accounting" folder. What do you think will happen?
+15. Go back to the Client-1 VM and try to access the "accounting" folder. What do you think will happen?
 </p>
 <br />
 
@@ -162,7 +162,7 @@ Go back to the Client-1 VM and try to access the "accounting" folder. What do yo
 <img src="https://i.imgur.com/UMAbGL6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-It failed when you tried to access it. That is because the user on our Client-1 VM is not a part of the "ACCOUNTANTS" group which is the only group that has access to this folder. Go ahead and log out of Client-1.
+16. It failed when you tried to access it. That is because the user on our Client-1 VM is not a part of the "ACCOUNTANTS" group which is the only group that has access to this folder. Go ahead and log out of Client-1.
 </p>
 <br />
 
@@ -171,15 +171,26 @@ It failed when you tried to access it. That is because the user on our Client-1 
 <img src="https://i.imgur.com/ERscq2T.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Add your user to the "ACCOUNTANTS" group. I am just going to add all Domain Users to the group for this example which will also ad the user we are using on Client-1. 
+17. Add your user to the members of the "ACCOUNTANTS" group. I am just going to add all Domain Users to the group for this example which will also add the user we are using on Client-1. 
 </p>
 <br />
 
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/swCfJkx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+18. Sign back into Client-1 and try to access the "accounting" folder. Does it work now?
 </p>
 <br />
+
+
+<p>
+<img src="https://i.imgur.com/4obOlnu.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+19. It lets us open it! This tutorial is a way to show how the permissions we set on DC-1 affect how Client-1 can interact with the shared folders. You can now delete your VMs. This is the end of the tutorial.
+</p>
+<br />
+
+
